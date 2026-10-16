@@ -1,0 +1,24 @@
+<!-- Place index.html in the project root, beside the public folder. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cake Galerie Pet Café — café reservations, menu, pet availability, and ordering.">
+  <title>Cake Galerie Pet Café</title>
+
+  <script>
+    const destination = new URL("./public/index.html", window.location.href);
+    destination.search = window.location.search;
+    destination.hash = window.location.hash;
+    window.location.replace(destination.href);
+  </script>
+</head>
+<body>
+  <p>
+    Opening Cake Galerie Pet Café…
+    <a href="./public/index.html">Click here to enter.</a>
+  </p>
+  <noscript>Please enable JavaScript to use the café system.</noscript>
+</body>
+</html>
